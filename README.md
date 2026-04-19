@@ -1,6 +1,6 @@
-# magic-retriever
+# axiom-retriever
 
-模块化检索策略库，专为 RAG 应用设计。
+模块化检索策略库，专为 Axiom RAG 流水线设计。
 
 ## 功能特性
 
