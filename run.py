@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Entry point for magic-retriever.
+"""Entry point for axiom-retriever.
 
 Usage:
     python -m magic_retriever.run --query <query> --strategy <strategy> [options]
@@ -9,11 +9,11 @@ import argparse
 import sys
 from pathlib import Path
 
-from magic_retriever.strategies import MMRRetriever, SimilarityRetriever
+from axiom_retriever.strategies import MMRRetriever, SimilarityRetriever
 
 
 def main():
-    parser = argparse.ArgumentParser(description="magic-retriever: Retrieval tool")
+    parser = argparse.ArgumentParser(description="axiom-retriever: Retrieval tool")
     parser.add_argument("--query", "-q", type=str, required=True, help="Query text")
     parser.add_argument("--output", "-o", type=Path, help="Output JSON file")
     parser.add_argument(

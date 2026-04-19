@@ -1,6 +1,6 @@
 """Similarity-based retrieval strategy."""
 
-from magic_retriever.core import BaseRetriever, RetrievedChunk, RetrievalMode, RetrievalResult
+from axiom_retriever.core import BaseRetriever, RetrievedChunk, RetrievalMode, RetrievalResult
 
 
 class SimilarityRetriever(BaseRetriever):

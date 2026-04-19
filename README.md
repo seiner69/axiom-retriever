@@ -18,9 +18,9 @@ pip install sentence-transformers
 ## 快速开始
 
 ```python
-from magic_retriever.strategies import SimilarityRetriever
-from magic_embedder.strategies import SentenceTransformerEmbedder
-from magic_vectorstore import ChromaVectorStore
+from axiom_retriever.strategies import SimilarityRetriever
+from axiom_embedder.strategies import SentenceTransformerEmbedder
+from axiom_vectorstore import ChromaVectorStore
 
 embedder = SentenceTransformerEmbedder()
 store = ChromaVectorStore(collection_name="my_collection")
@@ -35,7 +35,7 @@ print(f"检索到 {len(result.chunks)} 条结果")
 MMR（最大边际相关性）在保持相关性的同时增加结果多样性，避免重复内容：
 
 ```python
-from magic_retriever.strategies import MMRRetriever
+from axiom_retriever.strategies import MMRRetriever
 
 mmr = MMRRetriever(
     embedder=embedder,

@@ -1,6 +1,6 @@
 """Maximal Marginal Relevance (MMR) retrieval strategy."""
 
-from magic_retriever.core import BaseRetriever, RetrievedChunk, RetrievalMode, RetrievalResult
+from axiom_retriever.core import BaseRetriever, RetrievedChunk, RetrievalMode, RetrievalResult
 
 
 class MMRRetriever(BaseRetriever):

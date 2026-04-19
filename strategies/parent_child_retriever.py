@@ -1,7 +1,7 @@
 """Parent-Child Retriever: retrieves child chunks then fetches corresponding parent documents."""
 
-from magic_retriever.core import RetrievedChunk, RetrievalResult, BaseRetriever
-from magic_vectorstore.core.inmemory_store import InMemoryStore
+from axiom_retriever.core import RetrievedChunk, RetrievalResult, BaseRetriever
+from axiom_vectorstore.core.inmemory_store import InMemoryStore
 
 
 class ParentChildRetriever(BaseRetriever):

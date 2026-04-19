@@ -1,22 +1,22 @@
-"""magic-retriever: A modular retrieval library for RAG.
+"""axiom-retriever: A modular retrieval library for RAG.
 
 Provides retrieval strategies for finding relevant chunks from a vector store.
 
 Example:
-    >>> from magic_retriever.strategies import SimilarityRetriever
+    >>> from axiom_retriever.strategies import SimilarityRetriever
     >>>
     >>> retriever = SimilarityRetriever(embedder=embedder, vector_store=store)
     >>> result = retriever.retrieve("What is the revenue?", top_k=5)
     >>> print(f"Retrieved {len(result.chunks)} chunks")
 """
 
-from magic_retriever.core import (
+from axiom_retriever.core import (
     BaseRetriever,
     RetrievedChunk,
     RetrievalMode,
     RetrievalResult,
 )
-from magic_retriever.strategies import MMRRetriever, SimilarityRetriever
+from axiom_retriever.strategies import MMRRetriever, SimilarityRetriever
 
 __all__ = [
     # Core
